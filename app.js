@@ -38,3 +38,16 @@ function justify() {
         });
     });
 }
+
+function fontColor() {
+
+    const colorPicker = document.createElement('input');
+    colorPicker.type = 'color';
+    colorPicker.addEventListener('input', function () {
+        const selectedColor = colorPicker.value;
+        document.execCommand('foreColor', false, selectedColor);
+        document.body.removeChild(colorPicker);
+    });
+    colorPicker.click();
+}
+
