@@ -2,6 +2,11 @@ function bold() {
     document.execCommand('bold', true, null);
 }
 
+function underline() {
+    document.execCommand('underline', true, null);
+}
+
+
 function center() {
     document.querySelectorAll('.center').forEach(function (element) {
         element.addEventListener('click', function () {
