@@ -6,6 +6,11 @@ function underline() {
     document.execCommand('underline', true, null);
 }
 
+function italic() {
+    document.execCommand('italic', true, null);
+}
+
+
 
 function center() {
     document.querySelectorAll('.center').forEach(function (element) {
